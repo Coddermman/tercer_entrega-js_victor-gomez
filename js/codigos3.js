@@ -39,8 +39,9 @@ boton1.className= "border rounded-pill btn btn-primary";
 boton1.onclick =() => {
    /*aplicando dom para insertar una imagen*/
     let imagen = document.createElement ("div");
+    imagen.className = "container";
     imagen.innerHTML= `
-    <img  src="./imagenes/imagen.gif" alt="figura trotando">;
+    <img  src="./imagenes/imagen.gif" alt="figura trotando" class="card-img-top">;
     `;
     console.log(usuariosTotales.length);
 document.body.append(imagen);
